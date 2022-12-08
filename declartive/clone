@@ -1,0 +1,10 @@
+pipeline {
+    agent any 
+    stages{
+        stage("Build"){
+            steps{
+                git credentialsId: 'Boxfuse', url: 'https://github.com/Raksham7/boxfuse.git'
+            }
+        }
+    }
+}
